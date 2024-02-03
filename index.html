@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="gameScreen" class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="board" class="board">
+            <!-- Game board cells will be dynamically created here -->
+        </div>
+        <p id="status" class="status">Current Player: X</p>
+        <button id="resetButton" class="reset-button" onclick="resetGame()">New Game</button>
+    </div>
+
+    <div id="endScreen" class="container hidden">
+        <h1>Game Over</h1>
+        <p id="result" class="result"></p>
+        <button id="newGameButton" class="reset-button" onclick="startNewGame()">New Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
